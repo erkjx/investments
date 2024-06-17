@@ -1,0 +1,127 @@
+/* styles.module.css */
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #3bb19b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.white_btn {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    background-color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Content */
+.content {
+    padding: 20px;
+}
+
+/* Investment List */
+.investment_list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Nowa linia dla każdej inwestycji */
+    justify-content: space-between; /* Rozłożone równomiernie po poziomie */
+}
+
+/* Investment Item */
+.investment_item {
+    width: calc(50% - 10px); /* 50% szerokości z odstępem 10px */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+    box-sizing: border-box; /* Dodajemy, aby marginesy były wliczone w szerokość */
+}
+
+/* Investment Image */
+.investment_image {
+    width: 100%;
+    height: 200px; /* Ustaw wysokość obrazków */
+    object-fit: cover; /* Zapewnij, że obrazki będą wypełniać obszar */
+    border-radius: 5px 5px 0 0;
+}
+
+/* Comments Section */
+.comments_section {
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+}
+
+/* Comment */
+.comment {
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Comment Input Container */
+.comment_input_container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.comment_input {
+    width: calc(100% - 50px); /* Szerokość textarea, pomniejszona o szerokość ikony */
+    margin-bottom: 5px;
+    border: 1px solid #3bb19b; /* Dodajemy obramowanie */
+    border-radius: 10px; /* Zaokrąglamy rogi */
+    padding: 8px; /* Dodajemy wypełnienie */
+    color: #000000; /* Kolor tekstu */
+}
+
+.comment_input:focus {
+    outline: none; /* Usuwamy domyślny outline na focus */
+    border-color: #3bb19b; /* Zmieniamy kolor obramowania na focus */
+}
+
+.comment_icon {
+    font-size: 24px; /* Ustawiamy rozmiar ikony */
+    cursor: pointer;
+    color: #3bb19b; /* Kolor ikony */
+}
+
+
+
+/* Button */
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #3bb19b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3bb19b;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .investment_item {
+        width: calc(100% - 20px); /* Na mniejszych ekranach, pełna szerokość z odstępem 20px */
+    }
+}
